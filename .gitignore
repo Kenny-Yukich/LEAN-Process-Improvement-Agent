@@ -1,0 +1,37 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.secrets
+
+# Copilot Studio environment and connection artifacts
+.mcs/
+**/.mcs/
+conn.json
+connectionreferences.mcs.yml
+botdefinition.json
+changetoken.txt
+
+# Internal source material and generated office files
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.pdf
+
+# Common editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary output
+tmp/
+temp/
+out/
+*.log
+

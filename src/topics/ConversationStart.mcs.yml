@@ -1,0 +1,13 @@
+mcs.metadata:
+  componentName: Conversation Start
+  description: Welcomes the user and sets the coaching scope.
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnConversationStart
+  id: main
+  actions:
+    - kind: SendActivity
+      id: sendMessage_welcome
+      activity: |-
+        Hello, I'm {System.Bot.Name}. Describe a process condition you observed, and I'll help you identify possible waste and draft a Kaizen card for human review.
+

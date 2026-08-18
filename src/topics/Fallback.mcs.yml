@@ -1,0 +1,12 @@
+mcs.metadata:
+  componentName: Fallback
+  description: Requests a clearer process observation when no topic or grounded answer is available.
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnUnknownIntent
+  id: main
+  actions:
+    - kind: SendActivity
+      id: sendMessage_fallback
+      activity: I don't have enough information yet. Please describe what you observed, what should normally happen, and where the gap occurs.
+
